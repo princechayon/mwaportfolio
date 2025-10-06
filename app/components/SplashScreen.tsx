@@ -55,64 +55,64 @@ export default function SplashScreen() {
           <motion.svg viewBox="0 0 592 329" className="w-56 h-32 mb-6">
             {paths.map((d, i) => (
               <motion.path
-  key={i}
-  d={d}
-  stroke="#fff"
-  strokeWidth={6}
-  fill="white"
-  initial={{ pathLength: 0, opacity: 0, fillOpacity: 0 }}
-  animate={{
-    pathLength: 1,
-    opacity: 1,
-    fillOpacity: 1, // 🎯 target akhir: fill putih kelihatan
-  }}
-  transition={{
-    pathLength: {
-      duration: pathDuration,
-      ease: [0.42, 0, 0.58, 1],
-      delay: i * pathDelay,
-    },
-    opacity: {
-      duration: pathDuration,
-      delay: i * pathDelay,
-    },
-    fillOpacity: {
-      delay: totalPathTime + 0.2,
-      duration: fillDuration,
-    },
-  }}
-/>
+                key={i}
+                d={d}
+                stroke="#fff"
+                strokeWidth={6}
+                fill="white"
+                initial={{ pathLength: 0, opacity: 0, fillOpacity: 0 }}
+                animate={{
+                  pathLength: 1,
+                  opacity: 1,
+                  fillOpacity: 1, // 🎯 target akhir: fill putih kelihatan
+                }}
+                transition={{
+                  pathLength: {
+                    duration: pathDuration,
+                    ease: [0.42, 0, 0.58, 1],
+                    delay: i * pathDelay,
+                  },
+                  opacity: {
+                    duration: pathDuration,
+                    delay: i * pathDelay,
+                  },
+                  fillOpacity: {
+                    delay: totalPathTime + 0.2,
+                    duration: fillDuration,
+                  },
+                }}
+              />
             ))}
           </motion.svg>
 
           {/* Teks */}
           {/* Teks (staggered per huruf) */}
-<motion.div
-  className="flex space-x-0.5 text-white text-xl font-semibold"
-  initial="hidden"
-  animate="visible"
-  variants={{
-    hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.05, // jeda antar huruf
-        delayChildren: totalPathTime + fillDuration + 0.4, // mulai setelah logo selesai
-      },
-    },
-  }}
->
-  {"Mochammad Wildan Al Ghifary".split("").map((char, i) => (
-    <motion.span
-      key={i}
-      variants={{
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0 },
-      }}
-    >
-      {char === " " ? "\u00A0" : char}
-    </motion.span>
-  ))}
-</motion.div>
+        <motion.div
+          className="flex space-x-0.5 text-white text-xl font-semibold"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {},
+            visible: {
+              transition: {
+                staggerChildren: 0.05, // jeda antar huruf
+                delayChildren: totalPathTime + fillDuration + 0.4, // mulai setelah logo selesai
+              },
+            },
+          }}
+        >
+          {"Mochammad Wildan Al Ghifary".split("").map((char, i) => (
+            <motion.span
+              key={i}
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 },
+              }}
+            >
+              {char === " " ? "\u00A0" : char}
+            </motion.span>
+          ))}
+        </motion.div>
 
         </motion.div>
       )}

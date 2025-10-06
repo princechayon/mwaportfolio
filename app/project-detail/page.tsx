@@ -23,6 +23,7 @@ const projects: Project[] = [
     description: "Website ini dibuat untuk memudahkan peserta dan pengelola dalam proses rekrutmen peserta magang, memiliki beberapa aktor seperti: Admin, Admin Tata Usaha, Bidang, Mentor, dan Peserta. Website ini bersifat internal dan tidak dapat diakses oleh publik (Intranet).",
     tech: ["HTML", "CSS", "Javascript", "PHP", "MySQL", "Bootstrap", "CodeIgniter", "Figma", "Visual Studio Code", "Xampp"],
     image: "/projects/pusdatin.png",
+    figma: "https://www.figma.com/design/7NItndAJnDChfQiMMKzwI0/Project-Wildan?node-id=70-26&t=15SF9JYjItVcTpWE-1",
   },
   {
     id: 2,
