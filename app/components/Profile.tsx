@@ -17,7 +17,7 @@ export default function Profile() {
   {/* Foto */}
   <div className="w-40 h-40 mx-auto rounded-full overflow-hidden shadow-lg">
     <img
-      src="/profile.JPG"
+      src="/skdkemlu.JPG"
       alt="Profile"
       className="w-full h-full object-cover"
     />
