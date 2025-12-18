@@ -7,8 +7,9 @@ import Hero from "./components/Hero";
 import Profile from "./components/Profile";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Activity  from "./components/Activity";
 import Footer from "./components/Footer";
-import SplashScreen from "./components/SplashScreen"; //
+import SplashScreen from "./components/SplashScreen";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);

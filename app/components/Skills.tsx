@@ -37,8 +37,6 @@ export default function Skills() {
             <div className="w-10 h-0.5 bg-white rounded"></div>
           </div>
         </div>
-        {/* Icon di kanan */}
-        <FaReact className="text-cyan-400 text-4xl" />
       </div>
 
 

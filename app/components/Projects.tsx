@@ -63,7 +63,7 @@ export default function Projects() {
         href="/project-detail"
         className="
           px-6 py-2 
-          rounded-full 
+          rounded-xl
           border border-gray-400 
           text-gray-200 
           hover:bg-gray-200 hover:text-black 
